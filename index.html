@@ -1,0 +1,93 @@
+<!-- @format --> 
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Code Quiz</title>
+	</head>
+
+	<body>
+		<h1>General Knowledge Quiz</h1>
+
+		<section class="start">
+			<p>
+				Answer the following code questions within the time limit. 
+				Remember that each wrong answer reduces your time by 10 seconds!
+			</p>
+			<P class="multicolortext">GOOD LUCK!!</P>
+			<button id="startBtn" type="button" class="btn">Start Quiz</button>
+		</section>
+
+		<main class="main">
+			<!--Quiz window-->
+			<section id="gameCard" class="hide">
+				<h2 class="timer">Timer:</h2>
+
+				<div id="card1">
+					<header>
+						<h3 id="question">Question Goes HERE!</h3>
+					</header>
+
+					<div id="multipleChoice">
+						<div class="questionOptions">
+							<label id="answerA"></label>
+						</div>
+					
+
+						<div class="questionOptions">
+							<label id="answerB"></label>
+						</div>
+						
+
+						<div class="questionOptions">
+							<label id="answerC"></label>
+						</div>
+					
+
+						<div class="questionOptions">
+							<label id="answerD"></label>
+						</div>
+					</div>
+
+					<footer id="assessment1">
+						Can you answer all the questions in time?
+					</footer>
+				</div>
+			</section>
+
+			<button id="leaderBtn" type="button" class="btn">View High Scores</button>
+
+			<!--Player input window-->
+			<section id="inputForm" class="hide">
+				<h1 class="multicolortext">!! GAME OVER !!</h1>
+
+				<h2>You scored <span id="scoreBtn" class="btn">Score</span> points!</h2>
+				<form>
+					<label for="initialsBox">Enter Your Initials Here:</label>
+					<input id="initialsBox" type="text" maxlength="3" />
+					<input id="submitBtn" type="submit" class="btn" />
+				</form>
+			</section>
+
+			<!--High Score window-->
+			<section id="scoreCard" class="hide">
+				<div id="card2">
+					<header>
+						<h1>Top 10 High Scores</h1>
+					</header>
+					<div id="leaderBoard" style="min-height: 275px"></div>
+					<footer id="assessment2">Thank you</footer>
+				</div>
+
+				<button id="backBtn" type="button" class="btn">Go Back</button>
+				<button id="clearBtn" type="button" class="btn">Clear High Score</button>
+			</section>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
